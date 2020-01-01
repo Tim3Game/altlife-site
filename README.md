@@ -4,14 +4,18 @@ This is the main website for `https://altv.life/`. We figured it'd be wise to ke
 
 ### Development Environment Setup
 
+Run these first:
+
 ```
+npm install
 npm install -g http-server
 ```
 
 Open a command prompt for this repo.
 
 ```
-http-server . -c-1
+npm run start
 ```
 
-Navigate to one the URLs that are shown in the comman prompt; and add `/index.html` at the end. Ta-Da. Now you can see the website.
+Should open two consoles; minimize them. Your browser should open to the page.
+Refresh whenever you make changes.

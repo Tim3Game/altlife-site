@@ -1,0 +1,30 @@
+{
+    "name": "altlife-site",
+    "version": "1.0.0",
+    "description": "This is the main website for `https://altv.life/`. We figured it'd be wise to keep this open source so it can be updated and mainted fairly easily.",
+    "main": "index.js",
+    "scripts": {
+        "open": "node ./dev.js",
+        "start": "start http-server . -c-1 && start npm run open"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/altvLife/altlife-site.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/altvLife/altlife-site/issues"
+    },
+    "homepage": "https://github.com/altvLife/altlife-site#readme",
+    "prettier": {
+        "printWidth": 90,
+        "tabWidth": 4,
+        "semi": true,
+        "singleQuote": true
+    },
+    "dependencies": {
+        "github-webhook-handler": "^1.0.0",
+        "openurl": "^1.1.1"
+    }
+}
