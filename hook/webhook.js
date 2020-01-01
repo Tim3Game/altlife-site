@@ -3,7 +3,9 @@ const fs = require('fs');
 const http = require('http');
 const createHandler = require('github-webhook-handler');
 const path = require('path');
-const config = JSON.parse(fs.readFileSync(path.join(__dirname, '/config.json')));
+const config = JSON.parse(
+    fs.readFileSync(path.join(__dirname, '../../environment.json'))
+);
 const handler = createHandler({ path: '/webhook', secret: config.secret });
 
 http.createServer(function(req, res) {
