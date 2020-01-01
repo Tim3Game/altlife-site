@@ -13,7 +13,11 @@ class App extends Component {
         return h(
             'div',
             { class: 'page' },
-            h('h4', { class: '' }, 'Oops! Looks like we are not ready yet!'),
+            h(
+                'h4',
+                { class: '' },
+                'Oops! Looks like we are not ready yet! Check back soon!'
+            ),
             h('p', {}, `Feel free to visit the forums instead.`),
             h(
                 'a',
