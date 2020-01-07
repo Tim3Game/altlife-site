@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono&display=swap");
+@dark: rgba(20, 20, 20, 0.9);
+@contrast1: rgb(0, 217, 255);
+@contrast2: rgb(255, 153, 0);
+@darkaccent: rgb(8, 8, 8);
+@success: rgb(131, 255, 162);
+@error: rgb(255, 123, 123);
+@whitecontrast: rgba(255, 255, 255, 0.2);
+@Roboto: "Roboto";
+@RobotoCondensed: "Roboto Condensed";
+@RobotoMono: "Roboto Mono";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: @RobotoCondensed;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.3)
+    url("https://steamuserimages-a.akamaihd.net/ugc/545298547814167336/CC032D65B23AF948B60A56AB71CC4E2B88287A5B/?imw=2048&imh=864&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-clip: border-box;
+  background-size: cover;
+}
+
+*,
+*:focus {
+  outline: none;
+}
+
+#render {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+  min-height: 100%;
+  box-sizing: border-box;
+
+  p {
+    display: flex;
+    text-shadow: 1px 1px black;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .search {
+    border: 2px solid @contrast1;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.8);
+    color: @contrast1;
+    text-align: center;
+    height: 35px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex: 1;
+    width: 100%;
+    min-height: 100%;
+
+    .animation {
+      background: rgba(0, 0, 0, 0.95);
+      border-radius: 5px;
+      margin-bottom: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+
+      .dictionary {
+        color: @success;
+      }
+
+      .anim {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: @darkaccent;
+  box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer !important;
+}
