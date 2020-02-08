@@ -68,11 +68,11 @@ html {
     max-height: 35px;
     margin-bottom: 10px;
     background: linear-gradient(
-        90deg,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.5) 20%,
-        rgba(0, 0, 0, 0.5) 80%,
-        rgba(255, 255, 255, 0) 100%
+            90deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.5) 20%,
+            rgba(0, 0, 0, 0.5) 80%,
+            rgba(255, 255, 255, 0) 100%
     );
 
     .link {
@@ -122,22 +122,37 @@ html {
 .page {
     width: 100%;
 
-    .containera {
+    .item {
         display: flex;
         justify-content: space-between;
         justify-items: center;
         align-content: center;
         align-items: center;
-        background: linear-gradient(
-            90deg,
-            rgba(0, 0, 0, 0.5) 15%,
-            rgba(255, 255, 255, 0) 100%
-        );
         min-height: 200px;
         border-radius: 10px;
-        margin-bottom: 10px;
-        padding: 10px;
+        margin-bottom: 15px;
+        padding: 15px;
         box-sizing: border-box;
+
+
+        &:nth-of-type(even),
+        &:nth-of-type(odd) { // left
+            background: linear-gradient(
+                90deg,
+                rgba(0, 0, 0, 0.5) 15%,
+                rgba(255, 255, 255, 0) 100%
+            );
+
+            .wrapper {
+                text-align: left;
+                margin-left: 30px;
+                margin-right: 0;
+
+                content {
+                    padding-right: 10px;
+                }
+            }
+        }
 
         .logo {
             max-width: 250px;
@@ -146,37 +161,19 @@ html {
         }
     }
 
-    .containerb {
-        display: flex;
-        justify-content: space-between;
-        justify-items: center;
-        align-content: center;
-        align-items: center;
-        background: linear-gradient(
-            -90deg,
-            rgba(0, 0, 0, 0.5) 15%,
-            rgba(255, 255, 255, 0) 100%
-        );
-        min-height: 200px;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
     img {
         max-height: 200px;
-        padding: 0px 5px;
+        padding: 0 5px;
         border-radius: 5px;
     }
 
     video {
         max-width: 400px;
         border-radius: 5px;
-        padding: 0px 0px;
+        padding: 0 0;
         border: 2px solid @contrast2;
         background: black;
-        box-shadow: 0px 5px 5px 1px black;
+        box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.5);
         box-sizing: border-box;
     }
 
@@ -190,28 +187,26 @@ html {
         display: flex;
         justify-content: space-between;
         justify-items: center;
-        align-items: flex-start;
+        //align-items: flex-start;
         align-content: flex-start;
         flex-direction: column;
         width: 100%;
         box-sizing: border-box;
-        margin-left: 50px;
 
         header {
             font-family: @RobotoCondensed;
             color: @contrast2;
             font-size: 18px;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
         }
 
         content {
             font-family: @Roboto;
-            font-size: 14px;
-            text-align: left;
-            padding-bottom: 10px;
-            padding-right: 10px;
-            text-align: justify;
+            font-size: 13px;
+            padding-bottom: 15px;
+            //text-align: justify;
             box-sizing: border-box;
+            line-height: 20px;
         }
     }
 }
@@ -219,14 +214,136 @@ html {
 ::-webkit-scrollbar {
     width: 8px;
     background: @darkaccent;
-    box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: -1px 0 0 0 rgba(0, 0, 0, 0.25);
 }
 
 ::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 ::-webkit-scrollbar-thumb:hover {
     cursor: pointer !important;
+}
+
+.skill-select {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+
+    .link {
+        display: flex;
+        justify-content: flex-start;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        min-height: 35px;
+        min-width: calc(100% / 6);
+        width: auto;
+        border: 2px solid transparent;
+        box-sizing: border-box;
+        background: transparent;
+        color: white;
+        text-transform: uppercase;
+        user-select: none;
+        float: left;
+        cursor: pointer;
+
+        input {
+            display: none;
+
+            &:checked + label {
+                color: @contrast2;
+
+                .svg {
+                    filter: invert(0.2) sepia(1) hue-rotate(310deg) saturate(15) brightness(1);
+                }
+            }
+        }
+
+        label {
+            cursor: pointer;
+            font-family: @RobotoMono;
+            font-size: 13.3333px;
+            height: 100%;
+            width: calc(100% - 20px);
+
+            .svg {
+                max-height: 15px;
+                max-width: 15px;
+                padding-right: 5px;
+                float: left;
+            }
+
+            span {
+                float: left;
+            }
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            color: @contrast2;
+            cursor: pointer;
+
+            .svg {
+                filter: invert(0.2) sepia(1) hue-rotate(310deg) saturate(15) brightness(1);
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .svg {
+                display: none !important;
+            }
+        }
+    }
+}
+
+.leaderboard {
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+
+    tr {
+        line-height: 36px;
+        border: 0;
+        padding: 0 15px;
+
+        th,
+        td {
+            padding: 0 15px;
+        }
+    }
+
+    thead {
+        tr {
+            background-color: rgba(0, 0, 0, 0.4);
+
+            th {
+                font-family: @RobotoCondensed;
+                text-align: left;
+                color: @contrast2;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            &:nth-of-type(odd) {
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+
+            td {
+                &:last-of-type {
+                    font-family: @RobotoMono;
+                }
+            }
+        }
+    }
 }

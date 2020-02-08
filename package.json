@@ -1,7 +1,7 @@
 {
     "name": "altlife-site",
     "version": "1.0.0",
-    "description": "This is the main website for `https://altv.life/`. We figured it'd be wise to keep this open source so it can be updated and mainted fairly easily.",
+    "description": "This is the main website for `https://altv.life/`. We figured it'd be wise to keep this open source so it can be updated and maintained fairly easily.",
     "main": "index.js",
     "scripts": {
         "open": "node ./dev.js",
@@ -11,7 +11,10 @@
         "type": "git",
         "url": "git+https://github.com/altvLife/altlife-site.git"
     },
-    "author": "stuyk",
+    "author": "Stuyk",
+    "contributors": [
+        "Jovan Ivanovic [Dzeknjak] <jovan@einutech.com>"
+    ],
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/altvLife/altlife-site/issues"

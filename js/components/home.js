@@ -31,7 +31,7 @@ class Home extends Component {
             { class: 'page' },
             h(
                 'div',
-                { class: 'containera' },
+                { class: 'item' },
                 h('img', { class: 'logo', src: '../../images/logo.png' }),
                 h(
                     'div',
@@ -40,13 +40,13 @@ class Home extends Component {
                     h(
                         'content',
                         {},
-                        'alt:Life is a RPG server with built-in mechanics for Roleplay on the alt:V client. We focus on TEXT BASED RP. Meaning that it’s a RPG/RP Hybrid server that focuses on script mechanics. Inspiration for alt:V comes from games such as Runescape, Black Desert Online, Godfather Script from SAMP, and many more.'
+                        'alt:Life is an RPG server with built-in mechanics for Roleplay on the alt:V client. We focus on TEXT BASED RP, but it is a hybrid server meaning that we also support voice. Meaning that it’s a RPG/RP Hybrid server that focuses on script mechanics. Inspiration for alt:V comes from games such as Runescape, Black Desert Online, Godfather Script from SAMP, and many more.'
                     )
                 )
             ),
             h(
                 'div',
-                { class: 'containera' },
+                { class: 'item' },
                 h(this.renderVideo.bind(this), {
                     src: '../../images/webm/sync.webm'
                 }),
@@ -68,7 +68,7 @@ class Home extends Component {
             ),
             h(
                 'div',
-                { class: 'containera' },
+                { class: 'item' },
                 h(this.renderVideo.bind(this), {
                     src: '../../images/webm/updates.webm'
                 }),
@@ -90,7 +90,7 @@ class Home extends Component {
             ),
             h(
                 'div',
-                { class: 'containera' },
+                { class: 'item' },
                 h(this.renderVideo.bind(this), {
                     src: '../../images/webm/contextmenu.webm'
                 }),
@@ -112,7 +112,7 @@ class Home extends Component {
             ),
             h(
                 'div',
-                { class: 'containera' },
+                { class: 'item' },
                 h(this.renderVideo.bind(this), {
                     src: '../../images/webm/weather.webm'
                 }),
@@ -134,7 +134,7 @@ class Home extends Component {
             ),
             h(
                 'div',
-                { class: 'containera' },
+                { class: 'item' },
                 h(this.renderVideo.bind(this), {
                     src: '../../images/webm/community.webm'
                 }),
