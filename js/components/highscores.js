@@ -27,42 +27,46 @@ class Highscores extends Component {
     }
 
     getData() {
-        fetch(`http://145.239.255.55:7777/api/v1/highscore${this.state.selectedSkill == null ? '' : '?skill=' + this.state.selectedSkill}`)
-        .then((res) => {
-            return res.json();
-        }).then((data) => {
-            this.setState({
-                players: data.sort((a, b) => {
-                    const sortBy = a.total ? 'total' : 'level';
-                    return a[sortBy] > b[sortBy] ? -1 : b[sortBy] > a[sortBy] ? 1 : 0
-                })
+        fetch(
+            `http://145.239.255.55:7000/api/v1/highscore${
+                this.state.selectedSkill == null
+                    ? ''
+                    : '?skill=' + this.state.selectedSkill
+            }`
+        )
+            .then(res => {
+                return res.json();
+            })
+            .then(data => {
+                this.setState({
+                    players: data.sort((a, b) => {
+                        const sortBy = a.total ? 'total' : 'level';
+                        return a[sortBy] > b[sortBy] ? -1 : b[sortBy] > a[sortBy] ? 1 : 0;
+                    })
+                });
             });
-        });
     }
 
     renderSkillSelect() {
         let elements = [];
 
-        this.state.skills.forEach((skill) => {
+        this.state.skills.forEach(skill => {
             const el = h(
                 'div',
                 { class: 'link' },
-                h(
-                    'input',
-                    {
-                        type: 'radio',
-                        id: skill,
-                        name: 'skill',
-                        checked: this.state.selectedSkill == skill,
-                        onclick: () => {
-                            this.setState({
-                                selectedSkill: skill
-                            });
+                h('input', {
+                    type: 'radio',
+                    id: skill,
+                    name: 'skill',
+                    checked: this.state.selectedSkill == skill,
+                    onclick: () => {
+                        this.setState({
+                            selectedSkill: skill
+                        });
 
-                            this.getData();
-                        }
-                    },
-                ),
+                        this.getData();
+                    }
+                }),
                 h(
                     'label',
                     { for: skill },
@@ -80,22 +84,19 @@ class Highscores extends Component {
             h(
                 'div',
                 { class: 'link' },
-                h(
-                    'input',
-                    {
-                        type: 'radio',
-                        id: 'level',
-                        name: 'skill',
-                        checked: this.state.selectedSkill == null,
-                        onclick: () => {
-                            this.setState({
-                                selectedSkill: null
-                            });
+                h('input', {
+                    type: 'radio',
+                    id: 'level',
+                    name: 'skill',
+                    checked: this.state.selectedSkill == null,
+                    onclick: () => {
+                        this.setState({
+                            selectedSkill: null
+                        });
 
-                            this.getData();
-                        }
-                    },
-                ),
+                        this.getData();
+                    }
+                }),
                 h(
                     'label',
                     { for: 'level' },
@@ -127,21 +128,8 @@ class Highscores extends Component {
         return h(
             'table',
             { class: 'leaderboard' },
-            h(
-                'thead',
-                {},
-                h(
-                    'tr',
-                    {},
-                    h('th', {}, 'Player'),
-                    h('th', {}, 'Level'),
-                )
-            ),
-            h(
-                'tbody',
-                {},
-                ...elements
-            )
+            h('thead', {}, h('tr', {}, h('th', {}, 'Player'), h('th', {}, 'Level'))),
+            h('tbody', {}, ...elements)
         );
     }
 
