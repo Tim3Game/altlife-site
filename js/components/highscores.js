@@ -28,7 +28,7 @@ class Highscores extends Component {
 
     getData() {
         fetch(
-            `http://145.239.255.55:7000/api/v1/highscore${
+            `https://server.altv.life/api/v1/highscore${
                 this.state.selectedSkill == null
                     ? ''
                     : '?skill=' + this.state.selectedSkill
