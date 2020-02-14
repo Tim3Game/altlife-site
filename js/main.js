@@ -7,12 +7,14 @@ class App extends Component {
 
         this.pages = {
             0: Home,
-            1: Highscores
+            1: Highscores,
+            2: Map
         };
 
         this.pageNames = {
             0: 'Home',
-            1: 'Highscores'
+            1: 'Highscores',
+            2: 'Map'
         };
 
         this.links = {

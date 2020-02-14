@@ -67,12 +67,13 @@ html {
     min-height: 35px;
     max-height: 35px;
     margin-bottom: 10px;
+    z-index: 999;
     background: linear-gradient(
-            90deg,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, 0.5) 20%,
-            rgba(0, 0, 0, 0.5) 80%,
-            rgba(255, 255, 255, 0) 100%
+        90deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.5) 20%,
+        rgba(0, 0, 0, 0.5) 80%,
+        rgba(255, 255, 255, 0) 100%
     );
 
     .link {
@@ -134,9 +135,8 @@ html {
         padding: 15px;
         box-sizing: border-box;
 
-
         &:nth-of-type(even),
-        &:nth-of-type(odd) { // left
+        &:nth-of-type(odd) {
             background: linear-gradient(
                 90deg,
                 rgba(0, 0, 0, 0.5) 15%,
@@ -257,7 +257,8 @@ html {
                 color: @contrast2;
 
                 .svg {
-                    filter: invert(0.2) sepia(1) hue-rotate(310deg) saturate(15) brightness(1);
+                    filter: invert(0.2) sepia(1) hue-rotate(310deg) saturate(15)
+                        brightness(1);
                 }
             }
         }
@@ -307,7 +308,6 @@ html {
     border: 0;
     border-radius: 10px;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.2);
     border-collapse: collapse;
 
     tr {
@@ -323,7 +323,7 @@ html {
 
     thead {
         tr {
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.5);
 
             th {
                 font-family: @RobotoCondensed;
@@ -336,6 +336,10 @@ html {
     tbody {
         tr {
             &:nth-of-type(odd) {
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+
+            &:nth-of-type(even) {
                 background-color: rgba(0, 0, 0, 0.2);
             }
 
@@ -343,6 +347,86 @@ html {
                 &:last-of-type {
                     font-family: @RobotoMono;
                 }
+            }
+        }
+    }
+}
+
+#map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #143d6b !important;
+}
+
+.map-legend {
+    position: fixed;
+    z-index: 999;
+    bottom: 100px;
+    top: 100px;
+    right: 0;
+
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.75) 15%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    overflow: auto;
+
+    .link {
+        display: flex;
+        justify-content: flex-end;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        min-height: 35px;
+        border: 2px solid transparent;
+        box-sizing: border-box;
+        background: transparent;
+        color: white;
+        text-transform: uppercase;
+        user-select: none;
+        cursor: pointer;
+
+        input {
+            display: none;
+
+            &:checked + label {
+                opacity: 1;
+                filter: grayscale(0);
+            }
+        }
+
+        label {
+            cursor: pointer;
+            font-family: @RobotoMono;
+            font-size: 13.3333px;
+            height: 100%;
+            width: 100%;
+            opacity: 0.7;
+            filter: grayscale(1);
+
+            .svg {
+                max-height: 15px;
+                max-width: 15px;
+                padding-right: 5px;
+                float: right;
+            }
+
+            span {
+                float: right;
+            }
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .svg {
+                display: none !important;
             }
         }
     }
