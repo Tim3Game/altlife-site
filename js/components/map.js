@@ -310,7 +310,7 @@ class Map extends Component {
     }
 
     setupGrid() {
-        fetch(`https://server.altv.life:7443/api/v1/grid`)
+        fetch(`https://server.altv.life/api/v1/grid`)
             .then(res => {
                 return res.json();
             })
@@ -359,7 +359,7 @@ class Map extends Component {
     }
 
     setupBlips() {
-        fetch(`https://server.altv.life:7443/api/v1/blips`)
+        fetch(`https://server.altv.life/api/v1/blips`)
             .then(res => {
                 return res.json();
             })
@@ -369,6 +369,10 @@ class Map extends Component {
                 });
 
                 this.state.blips.map(blip => {
+                    if (!icons[blip.label]) {
+                        return;
+                    }
+
                     let icon = icons[blip.label];
 
                     if (typeof icon == 'undefined') {
@@ -390,8 +394,10 @@ class Map extends Component {
                 });
 
                 this.state.blips.forEach(blip => {
-                    if (this.state.legendSelected.includes(blip.label)) {
-                        blip.marker.addTo(this.map);
+                    if (blip.marker) {
+                        if (this.state.legendSelected.includes(blip.label)) {
+                            blip.marker.addTo(this.map);
+                        }
                     }
                 });
             });
@@ -405,40 +411,42 @@ class Map extends Component {
         let elements = [];
 
         this.state.legend.forEach((blip, index) => {
-            const el = h(
-                'div',
-                { class: 'link' },
-                h('input', {
-                    type: 'checkbox',
-                    id: blip,
-                    name: 'skill',
-                    checked: this.state.legendSelected.includes(blip),
-                    onchange: () => {
-                        this.state.legendSelected.includes(blip)
-                            ? this.state.legendSelected.splice(
-                                  this.state.legendSelected.indexOf(blip),
-                                  1
-                              )
-                            : this.state.legendSelected.push(blip);
+            if (icons[blip]) {
+                const el = h(
+                    'div',
+                    { class: 'link' },
+                    h('input', {
+                        type: 'checkbox',
+                        id: blip,
+                        name: 'skill',
+                        checked: this.state.legendSelected.includes(blip),
+                        onchange: () => {
+                            this.state.legendSelected.includes(blip)
+                                ? this.state.legendSelected.splice(
+                                      this.state.legendSelected.indexOf(blip),
+                                      1
+                                  )
+                                : this.state.legendSelected.push(blip);
 
-                        this.state.blips.forEach(blip => {
-                            if (this.state.legendSelected.includes(blip.label)) {
-                                blip.marker.addTo(this.map);
-                            } else {
-                                this.map.removeLayer(blip.marker);
-                            }
-                        });
-                    }
-                }),
-                h(
-                    'label',
-                    { for: blip },
-                    h('img', { class: 'svg', src: icons[blip].iconUrl }),
-                    h('span', {}, blip)
-                )
-            );
+                            this.state.blips.forEach(blip => {
+                                if (this.state.legendSelected.includes(blip.label)) {
+                                    blip.marker.addTo(this.map);
+                                } else {
+                                    this.map.removeLayer(blip.marker);
+                                }
+                            });
+                        }
+                    }),
+                    h(
+                        'label',
+                        { for: blip },
+                        h('img', { class: 'svg', src: icons[blip].iconUrl }),
+                        h('span', {}, blip)
+                    )
+                );
 
-            elements.push(el);
+                elements.push(el);
+            }
         });
 
         return h('div', { class: 'map-legend' }, ...elements);
