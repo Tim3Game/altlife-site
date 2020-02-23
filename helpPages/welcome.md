@@ -1,13 +1,41 @@
-### Welcome
+# Welcome
+#### Help Menu
 
 ---
 
-#### Section 1
+You may leave this panel by pressing your `ESCAPE` key.
+Use the navigation on the left to learn more about how to play in this game mode.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, felis ut posuere pharetra, ligula enim congue felis, sed sollicitudin orci augue at nisi. Nam augue magna, dignissim nec porttitor dapibus, ultrices in est. Morbi nulla libero, egestas eu tristique ut, aliquam laoreet mi. Praesent a magna tincidunt, aliquam sapien in, ultrices libero. Integer nulla turpis, malesuada in posuere et, pulvinar eget purus. Nulla consequat fermentum urna a pharetra. Ut viverra eros sit amet ipsum pretium maximus. Praesent vestibulum ac nisi sed pulvinar. Phasellus nunc libero, gravida sit amet enim et, tincidunt ultrices enim. Nulla eu urna luctus, vestibulum neque nec, laoreet orci. Vestibulum in justo imperdiet, rutrum nisi sit amet, aliquam erat. Aliquam ut eleifend ligula, ac placerat ex. Integer sagittis, orci sed bibendum luctus, nulla est tempor tellus, ac maximus leo erat ultricies ligula. Cras eros mi, aliquam eu erat eu, dignissim feugiat sapien. Aliquam tempus lobortis justo, at porta leo dignissim quis.
 
-Etiam tristique eu lorem at eleifend. Etiam quis lectus ut nisl laoreet tempus. Donec aliquam, justo nec interdum venenatis, turpis elit ullamcorper ante, sit amet scelerisque urna lectus id risus. Donec sit amet accumsan odio. Nullam aliquet elit feugiat turpis interdum accumsan. Proin tristique nisl lacus, in accumsan libero volutpat id. Ut blandit massa turpis, eu placerat eros tincidunt vel. Integer at aliquet mauris, sit amet feugiat eros. Donec aliquet porttitor blandit. Vestibulum neque dolor, faucibus sit amet purus ac, commodo volutpat purus. Mauris eleifend, urna nec eleifend hendrerit, quam nisi maximus lacus, eget aliquam sem diam ut neque. Maecenas accumsan dignissim nulla, non egestas velit iaculis at.
+* Interaction
+    * How to interact with the world.
+    
+* Controls
+    * Learn how to bring up various in-game menus.
+    
+* General
+    * General information about the game mode.
+    
+* Resources
+    * Where and how to gather resources for crafting.
+    
+* Skills
+    * Learn about your skills panel and what each skill allows you to achieve.
+    
+* Activities
+    * Learn about the different activities in the game mode.
+    
+* Jobs
+    * Learn about Jobs that earn you cash.
+    
+* Crafting
+    * Learn how to craft Food, Weapons, and Tools.
+    
+* Factions
+    * Learn how to create a Business, Gang, or Join a Police Faction
+    
+* Currency
+    * Learn about what Reward Points are used for and how to exchange them.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt, felis ut posuere pharetra, ligula enim congue felis, sed sollicitudin orci augue at nisi. Nam augue magna, dignissim nec porttitor dapibus, ultrices in est. Morbi nulla libero, egestas eu tristique ut, aliquam laoreet mi. Praesent a magna tincidunt, aliquam sapien in, ultrices libero. Integer nulla turpis, malesuada in posuere et, pulvinar eget purus. Nulla consequat fermentum urna a pharetra. Ut viverra eros sit amet ipsum pretium maximus. Praesent vestibulum ac nisi sed pulvinar. Phasellus nunc libero, gravida sit amet enim et, tincidunt ultrices enim. Nulla eu urna luctus, vestibulum neque nec, laoreet orci. Vestibulum in justo imperdiet, rutrum nisi sit amet, aliquam erat. Aliquam ut eleifend ligula, ac placerat ex. Integer sagittis, orci sed bibendum luctus, nulla est tempor tellus, ac maximus leo erat ultricies ligula. Cras eros mi, aliquam eu erat eu, dignissim feugiat sapien. Aliquam tempus lobortis justo, at porta leo dignissim quis.
-
-Etiam tristique eu lorem at eleifend. Etiam quis lectus ut nisl laoreet tempus. Donec aliquam, justo nec interdum venenatis, turpis elit ullamcorper ante, sit amet scelerisque urna lectus id risus. Donec sit amet accumsan odio. Nullam aliquet elit feugiat turpis interdum accumsan. Proin tristique nisl lacus, in accumsan libero volutpat id. Ut blandit massa turpis, eu placerat eros tincidunt vel. Integer at aliquet mauris, sit amet feugiat eros. Donec aliquet porttitor blandit. Vestibulum neque dolor, faucibus sit amet purus ac, commodo volutpat purus. Mauris eleifend, urna nec eleifend hendrerit, quam nisi maximus lacus, eget aliquam sem diam ut neque. Maecenas accumsan dignissim nulla, non egestas velit iaculis at.
+* Points/Turfs
+    * Learn about Turfs/Points and what they are used for.
