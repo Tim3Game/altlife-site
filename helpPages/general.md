@@ -1,6 +1,3 @@
-#### General
----
-
 This section covers the small information you may not know about this game mode and what general restrictions are implemented. Think of them as passive rules.
 
 #### Combat
