@@ -1,6 +1,6 @@
 Controls define how you interact with the world, players, vehicles, and more.
 
-#### General Controls
+### General Controls
 | Key  | Description |
 | - | - |
 | `T`  | Open Chat Panel
@@ -12,19 +12,22 @@ Controls define how you interact with the world, players, vehicles, and more.
 | `Shift + F7` | Hide All Hud Elements
 | `TAB + Right click`| Open Interaction Menu / Context Menu
 
-#### On Foot Controls
+
+### On Foot Controls
 | Key | Description |
 | - | - |
 | `Left Ctrl` | Crouch
 
-#### Vehicle Controls
+
+### Vehicle Controls
 | Key | Description |
 | - | - |
 | `Shift + G` | Start / Stop Vehicle Engine
 | `Shift + H` | Lock/Unlock Last Vehicle Entered
 | `Shift + X` | Vehicle Autopilot (Need to set a map waypoint first)
 
-#### Inventory Controls
+
+### Inventory Controls
 | Key | Description |
 | - | - |
 | `Double Click` | Use Item / Equip Item
