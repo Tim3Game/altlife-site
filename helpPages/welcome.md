@@ -1,4 +1,3 @@
-# Welcome
 #### Help Menu
 
 ---
