@@ -1,8 +1,4 @@
-#### Controls
----
-
 Controls define how you interact with the world, players, vehicles, and more.
-
 
 | Key  | Description |
 | - | - |
