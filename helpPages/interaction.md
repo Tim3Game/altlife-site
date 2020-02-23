@@ -1,6 +1,3 @@
-#### Interaction
----
-
 Interaction defines how you interact with the world. Interaction can be done in this very specific way.
 
 1. Hold down your `TAB` key.
