@@ -4,7 +4,7 @@
 Interaction defines how you interact with the world. Interaction can be done in this very specific way.
 
 1. Hold down your `TAB` key.
-2. Hover over an player, object, vehicle, npc, etc. with your mouse.
+2. Hover over a player, object, vehicle, npc, etc. with your mouse.
 3. Press your `Right Mouse Button (Right Click)`.
 4. Select an option with your `Left Mouse Button (Left Click)`
 5. `TAB` can now be released.
