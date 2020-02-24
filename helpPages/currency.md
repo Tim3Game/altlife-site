@@ -3,11 +3,17 @@ Currency in this game mode works a little different than a lot of the other game
 
 ---
 
-* Currency is passively earned.
-* Every 5 minutes of play earns you 1 Reward Point.
-* Every Reward Point can be exchanged at a ration of 1:40.
-    * $40 for every point.
-* Reward Points can be spent on faction/gang/business upgrades.
-    * Once they are spent; they cannot be reclaimed.
-* Reward Points can be earned by simply staying logged into the server and being afk.
-* Currency can also be earned through various jobs.
+## Reward Points
+Reward Points are a way to reward players for spending time on our server. Reward points can be exchanged for cash, or they can be spent on faction upgrades. 
+
+Faction upgrades allow for players to quickly work together to unlock a shared vehicle.
+
+Reward points cannot be reclaimed once spent.
+
+1 Reward Point is Issued for every 5 Mintues of gameplay.
+
+1 Reward Point is currently worth $40 in-game.
+
+
+## Afking
+Players may choose to leave their game running and account logged in if they would like to earn passive income over time. We do not punish players for doing this.
