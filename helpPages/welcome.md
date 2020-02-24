@@ -1,6 +1,9 @@
+# Welcome
+
 You may leave this panel by pressing your `ESCAPE` key.
 Use the navigation on the left to learn more about how to play in this game mode.
 
+---
 
 * Interaction
     * How to interact with the world.
