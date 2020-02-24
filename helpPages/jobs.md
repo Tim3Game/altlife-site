@@ -1,5 +1,3 @@
-# Jobs
-
 Jobs are mostly built around using resources. See the resources tab for more information on what resources are.
 
 ### Mining
