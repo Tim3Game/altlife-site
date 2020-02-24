@@ -31,16 +31,16 @@ We have a built in anti-cheat that will catch you and kick you INSTANTLY.
 ## Disputes in Roleplay
 Rather than having administrators constantly interrupt Roleplay we have a very simple rule. If you come across a dispute with another player and cannot agree on an outcome you can either /flipcoin or /d20 to determine the outcome of the scenario. Players that do not abide by the outcome should be considered Power Gamers.
 
-> A player is standing on the other side of the door.
-> ie. /me attempts to push open the door.
-> ie. /do Do you let me push open the door?
-> ie. Other Player: /do No, you're not strong enough.
-> ie. ... At this point, it would be a dispute because nobody knows how strong you are.
-> ie. Me: /b Let's flip a coin to decide the outcome.
-> ie. Other Player: /b ok
-> ie. /do Heads - I push the door open. Tails - You hold me back.
-> ie. /flipcoin
-> ie. It's Tails
+* A player is standing on the other side of the door.
+* ie. /me attempts to push open the door.
+* ie. /do Do you let me push open the door?
+* ie. Other Player: /do No, you're not strong enough.
+* ie. ... At this point, it would be a dispute because nobody knows how strong you are.
+* ie. Me: /b Let's flip a coin to decide the outcome.
+* ie. Other Player: /b ok
+* ie. /do Heads - I push the door open. Tails - You hold me back.
+* ie. /flipcoin
+* ie. It's Tails
 
 Failure to respect the outcome of a coin flip or d20 will be considered Power Gaming.
 
@@ -60,15 +60,15 @@ No exceptions.
 ## Power Gaming
 The act of doing something super-human that goes against any human abilities. It is important to know that Power Gaming is also defined as an act that actively defies the outcome of a situation when the other party has the advantage.
 
-> ie. When you have a gun pointed at you and you push that gun aside to point a gun at them.
+* ie. When you have a gun pointed at you and you push that gun aside to point a gun at them.
 
 Basically don't try to John Wick your way out of a situation.
 
 ## Meta Gaming
 MetaGaming is when a player uses out of game knowledge to their advantage; this does not include personal experiences. Moreso just public knowledge of player whereabouts, who another player knows, etc.
 
-> ie. Stalking a player on Twitch and following them to their location.
-> ie. Finding out information on Discord to use in-game against another player.
+* ie. Stalking a player on Twitch and following them to their location.
+* ie. Finding out information on Discord to use in-game against another player.
 
 ## Reporting with Insufficient Evidence
 Reporting another player will require you to explicitly have video or photographic evidence with a clear understanding of the situation that is currently at play. 
@@ -103,4 +103,3 @@ Just because you can shoot. Doesn't mean you should.
 All police related factions may not use any form of deadly weapons unless they are provoked through a gun fight.
 
 If that gang member shoots first then it’s open season on that individual member.
-
