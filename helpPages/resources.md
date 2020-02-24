@@ -1,6 +1,10 @@
+# Resources
+
 Resources come in various types and can be gathered in various ways. Let's talk about what some of the main resources are and what they are used for.
 
-### Metal
+---
+
+## Metal
 Unrefined Metal can be gathered from the mining job. Refined Metal can be used to create various items such as:
 
 * Guns
@@ -8,7 +12,7 @@ Unrefined Metal can be gathered from the mining job. Refined Metal can be used t
 * Repair Kits
 * etc.
 
-### Wood
+## Wood
 Unrefined Wood can be gathered from the woodcutting job. Refined Wood can be used to create various items such as:
 
 * Guns
@@ -17,7 +21,7 @@ Unrefined Wood can be gathered from the woodcutting job. Refined Wood can be use
 * Gun Licenses
 * etc.
 
-### Produce / Ingredients
+## Produce / Ingredients
 Produce and ingredients can be grown by farming for them at Grape Seed. Check the Jobs tab under `farming` to learn more about that process.
 
 Here are some ingredients that can be grown:
@@ -47,7 +51,7 @@ Here are some ingredients that can be grown:
 * Wheat
 * Beets
 
-### Fish
+## Fish
 Any type of named fish is also known as `rawfish`. Rawfish can be used in crafting recipes for cooking.
 
 
