@@ -1,4 +1,8 @@
-Interaction defines how you interact with the world. Interaction can be done in this very specific way.
+# Interaction
+
+Interaction defines how you interact with the world. Interaction can be done in a very specific way.
+
+---
 
 1. Hold down your `TAB` key.
 2. Hover over a player, object, vehicle, npc, etc. with your mouse.
