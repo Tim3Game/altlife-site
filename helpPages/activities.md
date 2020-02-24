@@ -2,6 +2,8 @@
 
 Activities refer to all the little unknown things that exist around the server that are currently possible.
 
+---
+
 ## Subway Stations / Train Stations
 Throughout the map there are train stations and subway stations that can be accessed by interacing with a metro ticket prop. These stations will get you to a location across the map in just a few seconds. However, tickets cost around $75 each.
 
