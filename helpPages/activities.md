@@ -19,3 +19,6 @@ Soda machines and coffee machines can be found across the map. They give you sod
 General Store fruit stands offer a completely different set of items than the general store itself. Make sure you interact with them.
 
 ![](https://i.imgur.com/QlEpFYy.jpg)
+
+## Raine Water Dispensers
+If you have an empty jug you can fill the jug by visiting a Raine Water Dispenser to fill them with water. Which is useful for cooking.
