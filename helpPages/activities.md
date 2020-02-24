@@ -1,3 +1,5 @@
+# Activities
+
 Activities refer to all the little unknown things that exist around the server that are currently possible.
 
 ## Subway Stations / Train Stations
