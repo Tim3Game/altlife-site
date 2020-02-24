@@ -1,6 +1,9 @@
+# Tools
 Tools such as a pickaxe, axe, etc. give you the ability to harvest resources such as wood, metal, etc. Tools have their own level scale with their own bonuses and requirements to equip them.
 
-### Pickaxe
+---
+
+## Pickaxe
 Bonus refers to time cut off between swings.
 
 | Name | Level | Bonus |
@@ -16,7 +19,7 @@ Bonus refers to time cut off between swings.
 |Master Pickaxe | 80 | -8s
 |Artisan Pickaxe | 90 | -9s
 
-### Axe
+## Axe
 Bonus refers to time cut off between swings.
 
 | Name | Level | Bonus |
@@ -32,7 +35,7 @@ Bonus refers to time cut off between swings.
 |Master Axe | 80 | -8s
 |Artisan Axe | 90 | -9s
 
-### Fishing Rod
+## Fishing Rod
 Bonus refers to the bonus towards your power bar to exceed the `.98` threshold for a perfect catch. Keep in mind that the values displayed on screen during catching are just simply multiplied by 100. Which means 95 is actually just `.95`.
 
 | Name | Level | Bonus |
@@ -48,5 +51,5 @@ Bonus refers to the bonus towards your power bar to exceed the `.98` threshold f
 |Master Fishing Rod | 80 | 0.08
 |Artisan Fishing Rod | 90 | 0.09
 
-### Hammer
+## Hammer
 Literally serves no purpose. We just thought we should give you a hammer.
