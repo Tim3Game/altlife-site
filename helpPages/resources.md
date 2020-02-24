@@ -1,7 +1,7 @@
 Resources come in various types and can be gathered in various ways. Let's talk about what some of the main resources are and what they are used for.
 
 ### Metal
-Metal can be gathered from the mining job. Metal can be used to create various items such as:
+Unrefined Metal can be gathered from the mining job. Refined Metal can be used to create various items such as:
 
 * Guns
 * Tools
@@ -9,7 +9,7 @@ Metal can be gathered from the mining job. Metal can be used to create various i
 * etc.
 
 ### Wood
-Wood can be gathered from the woodcutting job. Wood can be used to create various items such as:
+Unrefined Wood can be gathered from the woodcutting job. Refined Wood can be used to create various items such as:
 
 * Guns
 * Tools
