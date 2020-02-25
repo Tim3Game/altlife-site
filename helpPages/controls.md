@@ -6,6 +6,7 @@ Controls define how you interact with the world, players, vehicles, and more.
 ## General Controls
 | Key  | Description |
 | - | - |
+| `~` or `` ` `` | Open Players Panel (Who is online)
 | `T`  | Open Chat Panel
 | `I`  | Open Inventory Panel
 | `O`  | Open Vehicle Panel / Open Stats Panel
