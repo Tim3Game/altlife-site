@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>alt:Life In-Game Trailer</title>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: black;
+            }
+
+            .container {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .container video {
+                position: absolute;
+                left: 50%; /* % of surrounding element */
+                top: 50%;
+                transform: translate(-50%, -50%); /* % of current element */
+            }
+
+            .container img {
+                z-index: 199;
+                width: 40%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <video muted loop autoplay playsinline="true">
+                <source src="/images/webm/trailer.webm" type="video/webm" />
+            </video>
+            <img src="/images/logo.png" />
+        </div>
+    </body>
+</html>
