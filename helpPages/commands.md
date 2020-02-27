@@ -23,7 +23,7 @@ Commands be typed in through the chat interface. This can be done by simply pres
 | sf | Determine if an action should succeed or fail. Randomly. |
 | d20 | Role a 20 sided dice. |
 | countdown | Starts a countdown. Default is 5 seconds |
-| ad | Sends an ad to every player |
+| ad | Sends an ad to every player for $50 |
 
 ## Phone
 | Command | Description
