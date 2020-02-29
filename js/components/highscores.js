@@ -9,6 +9,7 @@ class Highscores extends Component {
                 'agility',
                 'cooking',
                 'crafting',
+                'driving',
                 'fishing',
                 'gathering',
                 'mechanic',
